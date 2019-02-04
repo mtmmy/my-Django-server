@@ -1,0 +1,175 @@
+@mixin general($height: 800px, $background: "") {
+    position: relative;
+    height: $height;
+    background: $background;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin infoSectionBg() {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    opacity: 0.4;
+    right: 0;
+    top: 0;
+}
+
+.banner {
+    @include general(800px, url("./../media/backgroundPic.jpg"));
+}
+
+.helloSection {
+    font-style: italic;
+}
+
+@mixin headerWords($fontSize: 64px) {
+    font-weight: 700;
+    font-size: $fontSize;
+
+    @media screen and (min-width: 768px) {
+        font-size: 40px;
+        p::after {
+            display: inline-block;
+            margin: 0 0 12px 20px;
+            height: 3px;
+            content: " ";
+            text-shadow: none;
+            background-color: black;
+            width: 140px;
+        }
+
+        p::before {
+            display: inline-block;
+            margin: 0 20px 12px 0;
+            height: 3px;
+            content: " ";
+            text-shadow: none;
+            background-color: black;
+            width: 140px;
+        }
+    }
+}
+
+.nameSection {
+    @include headerWords;
+}
+
+.bio {
+    @include general(300px, "");
+
+    .bioBg {
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+            ), url("./../media/bg_motto.jpg");
+        @include infoSectionBg();
+    }
+}
+
+.motto {
+    @include headerWords(40px);
+}
+
+@mixin infoSection {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    
+    padding: 0 10px 0;
+    @media screen and (min-width: 576px) {
+        padding: 0 5vw 0;
+    }
+    @media screen and (min-width: 768px) {
+        padding: 0 10vw 0;
+    }
+    @media screen and (min-width: 992px) {
+        padding: 0 15vw 0;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 0 20vw 0;
+    }
+}
+
+@mixin subInfoDiv {
+    min-height: 100px;
+    text-align: left;
+    margin-bottom: 20px;
+    .companyName, .major {
+        font-size: 22px;
+        font-weight: 900;
+    }
+}
+
+.infoHeader {
+    @include headerWords(48px);
+}
+
+.eduDiv {
+    @include infoSection;
+
+    .eduBg {        
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+            ), url("./../media/bg_asu.jpg");
+        
+        background-position: 0 25%;
+        
+        @include infoSectionBg;
+    }
+
+    .eduInfoDiv {
+        @include subInfoDiv();
+    }
+
+    @mixin icon {
+        height: 100px;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        
+        @media screen and (max-width: 767.98px) {
+            display: none;
+        }
+    }
+
+    .icon_asu {
+        background: url("./../media/icon_asu.png");
+        @include icon;
+        
+    }
+
+    .icon_cgu {
+        background: url("./../media/icon_cgu.png");
+        @include icon;        
+    }
+}
+
+.expDiv {
+    @include infoSection;
+
+    .expBg {
+           
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+            ), url("./../media/bg_working.jpg");
+        @include infoSectionBg; 
+    }
+
+    .expInfoDiv {
+        @include subInfoDiv();
+    }
+}
+
+.skillDiv {
+    height: 1000px;
+}

@@ -1,0 +1,67 @@
+.footer {
+    height: 360px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.downloadResume {
+    font-size: 28px;
+    font-weight: 700;
+    width: 90%;
+    color: #eeeeee;
+    text-align: center;
+    border: 3px solid #eeeeee;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: auto;
+    cursor: pointer;
+}
+
+.downloadResume:hover {
+    background-color: #333333;
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+
+    @media screen and (min-width: 768px) {
+        width: 400px;
+    }
+}
+
+.icons {
+    cursor: pointer;
+    font-size: 50px;
+
+    @media screen and (min-width: 768px) {
+
+    }
+}
+
+.fa-linkedin-square {
+    color: #0077B5;
+}
+
+.fa-facebook-square {
+    color: #4267ae;
+}
+
+// .fa-github-square {
+// }
+
+.fa-twitter-square {
+    color: #1da1f2;
+}
+
+.fa-envelope-square,
+.fa-envelope-square:link,
+.fa-envelope-square:visited,
+.fa-envelope-square:hover,
+.fa-envelope-square:active {
+    color: #ce4149;
+}

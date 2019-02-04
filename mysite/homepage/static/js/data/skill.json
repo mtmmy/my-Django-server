@@ -1,0 +1,149 @@
+{
+    "programming": {
+        "nameTxt": "Programming Technologies",
+        "className": "chartProg",
+        "skills": 
+        [
+            {
+                "name": "Java",
+                "picClassName": "java",
+                "percentage": 85,
+                "isActive": false,
+                "colorCode": "#3372b3"
+            },
+            {
+                "name": "Javascript",
+                "picClassName": "javascript",
+                "percentage": 85,
+                "isActive": false,
+                "colorCode": "#EEE45F"
+            },
+            {
+                "name": "jQuery",
+                "picClassName": "jquery",
+                "percentage": 85,
+                "isActive": false,
+                "colorCode": "#1F3551"
+            },
+            {
+                "name": "Python",
+                "picClassName": "python",
+                "percentage": 75,
+                "isActive": false,
+                "colorCode": "#FED155"
+            },
+            {
+                "name": "C#",
+                "picClassName": "csharp",
+                "percentage": 70,
+                "isActive": false,
+                "colorCode": "#812D94"
+            },
+            {
+                "name": "HTML5",
+                "picClassName": "htmlPic",
+                "percentage": 70,
+                "isActive": false,
+                "colorCode": "#e34f26"
+            },
+            {
+                "name": "CSS & SCSS",
+                "picClassName": "css",
+                "percentage": 70,
+                "isActive": false,
+                "colorCode": "#3784C8"
+            },
+            {
+                "name": "Spring Framework",
+                "picClassName": "spring",
+                "percentage": 70,
+                "isActive": false,
+                "colorCode": "#7EB050"
+            },
+            {
+                "name": "ReactJs",
+                "picClassName": "reactjs",
+                "percentage": 65,
+                "isActive": false,
+                "colorCode": "#80D8F7"
+            },
+            {
+                "name": "C++",
+                "picClassName": "cpp",
+                "percentage": 65,
+                "isActive": false,
+                "colorCode": "#0A80C8"
+            },
+            {
+                "name": "MySQL",
+                "picClassName": "mysql",
+                "percentage": 65,
+                "isActive": false,
+                "colorCode": "#FEA244"
+            },
+            {
+                "name": "Xamarin",
+                "picClassName": "xamarin",
+                "percentage": 30,
+                "isActive": false,
+                "colorCode": "#3898D7"
+            },
+            {
+                "name": "Android",
+                "picClassName": "android",
+                "percentage": 30,
+                "isActive": false,
+                "colorCode": "#85B85A"
+            }
+        ]
+    },
+    "concepts": {
+        "nameTxt": "Concepts",
+        "className": "chartCon",
+        "skills": [
+            {
+                "name": "Object-oriented Programming",
+                "picClassName": "",
+                "percentage": 95,
+                "isActive": false,
+                "colorCode": "#222222"
+            },
+            {
+                "name": "Data Structure",
+                "picClassName": "",
+                "percentage": 90,
+                "isActive": false,
+                "colorCode": "#222222"
+            },
+            {
+                "name": "Algorithm",
+                "picClassName": "",
+                "percentage": 85,
+                "isActive": false,
+                "colorCode": "#222222"
+            }
+        ]
+    },
+    "productivity": {
+        "nameTxt": "Productivity",
+        "className": "chartProd",
+        "skills": 
+        [
+
+            {
+                "name": "SVN",
+                "picClassName": "svn",
+                "percentage": 90,
+                "isActive": false,
+                "colorCode": "#859cc4"
+            },
+            {
+                "name": "Git",
+                "picClassName": "git",
+                "percentage": 85,
+                "isActive": false,
+                "colorCode": "#df5b40"
+            }
+        ]
+    }
+}

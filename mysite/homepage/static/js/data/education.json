@@ -1,0 +1,38 @@
+[
+    {
+        "school": "Arizona State University",
+        "dateEnd": "Expected Dec 2019",
+        "location": "Tempe, Arizona",
+        "major": "Master of Computer Science",
+        "gpa": "3.92",
+        "icon": "asu",
+        "details": [
+
+        ],
+        "bgClassName": "asuBG"
+    },
+    {
+        "school": "Chang Gung University",
+        "dateEnd": "Jun 2013",
+        "location": "Taoyuan, Taiwan",
+        "major": "Master of Science in Computer Science And Information Engineering",
+        "gpa": "3.91",
+        "icon": "cgu",
+        "details": [
+            "I concentrated on the 4G wireless network, especially 802.16m – also known as WiMAX – under the supervision of Prof. Jenhui Chen. I published a paper on my findings in the journal ​Simulation Modelling Practice and Theory​. Through this project, I mainly focused on the IEEE 802.16m simulator as implemented by NS-3. This simulator provides a validation tool for researchers to verify simulated results related to WiMAX while supporting basic MAC functions, including initial raging function, four types of bandwidth request procedure, five types of standard-specific QoS, an QoS-based transmission scheduler, an adaptive modulation and coding (AMC) selection function, and a PHY layer with a channel propagation model."
+        ],
+        "bgClassName": "cguBG_1"
+    },
+    {
+        "school": "Chang Gung University",
+        "dateEnd": "Jun 2010",
+        "location": "Taoyuan, Taiwan",
+        "major": "Bachelor of Science in Computer Science And Information Engineering",
+        "gpa": "3.13",
+        "icon": "cgu",
+        "details": [
+            "During my third year at Chang Gung University, I led a team project to develop a 3D shooting game. My main task was to the 3D game using C++ and DirectX under the supervision of Prof. Jenhui Chen. For this, I used an object-oriented programming method to develop different elements, such as calculating real-time collision. I also used Point Sprite for the particle system, which is capable of rendering on a single point in a 3D system. This reduced memory usage while increasing calculation performance to implement aircraft bullets. Our project took part in the Computer Science Innovation Exhibition at Chang Gung University and ranked in the top third."
+        ],
+        "bgClassName": "cguBG_2"
+    }
+]

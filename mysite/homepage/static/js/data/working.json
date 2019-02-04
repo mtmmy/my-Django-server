@@ -1,0 +1,58 @@
+[
+    {
+        "companyName": "Alliance Computer Systems Ltd. Taiwan Branch",
+        "dateStart": "Aug 2017",
+        "dateEnd": "Oct 2017",
+        "location": "Taipei, Taiwan",
+        "title": "Frontend Web Engineer",
+        "details": [
+            "Designed and developed reusable components which can be utilized on different web-based slot games",
+            "Managed states in ReactJs by using Redux to simplify programming logic"
+        ],
+        "bgClassName": "acsBG"
+    },
+    {
+        "companyName": "Green Bamboo Technology",
+        "dateStart": "Mar 2015",
+        "dateEnd": "Feb 2017",
+        "location": "Taipei, Taiwan",
+        "title": "Full Stack Developer",
+        "details": [
+            "At frontend, I developed the user operating platform, which included functions such as the login system, horse race ticket trading system, and user center; I also designed the back office system, which supported game operators in controlling the details of horse racing games. All content at front-end was implemented using javascript, jQuery, html5, and CSS, and we used Spring Web MVC to implement the backend system. Besides the main business of horse race system, I also led a side project which is a client site of shopping platform for iOS implemented by Xamarin. This app included user registration system, shopping cart system and purchase authentication."
+        ],
+        "bgClassName": "gbBG"        
+    },
+    {
+        "companyName": "PerfectPairs Entertainment Inc.",
+        "dateStart": "Sep 2014",
+        "dateEnd": "Nov 2014",
+        "location": "New Taipei, Taiwan",
+        "title": "Software Engineer",
+        "details": [
+            "We had to develop an integrated platform that included member systems and social functions; the third-party game developer was then allowed to put their product on the platform without concerning the clients. I participated in developing the user authentication function, which controlled the login process of valid members and supported designing the player matching system. This solved the issue of how to distribute players evenly."
+        ],
+        "bgClassName": "ppBG"
+    },
+    {
+        "companyName": "Chang Gung University",
+        "dateStart": "Spring 2011",
+        "dateEnd": "Fall 2011",
+        "location": "Taoyuan, Taiwan",
+        "title": "Teaching Assistant",
+        "details": [
+            "As I wanted to share my ideas and findings with others, I became a teaching assistant in both Digital Circuit Experiment and Computer Organization Experiment. In Digital Circuit Experiment, I taught the basics of logic gates and how to implement advanced logic circuits on breadboards. In Computer Organization Experiment, I taught students how to implement a fundamental CPU by using Verilog on an FPGA board. My teaching experience also gave me the opportunity to cultivate my knowledge and presentational skills."
+        ],
+        "bgClassName": "taBG"
+    },
+    {
+        "companyName": "UserJoy Entertainment Inc.",
+        "dateStart": "Jul 2009",
+        "dateEnd": "Aug 2009",
+        "location": "Taipei, Taiwan",
+        "title": "Intern",
+        "details": [
+            "Based on my experience leading a 3D game project, I helped game programmers discover memory leak issues when loading new 3D views. It was here that I gained first-hand experience in developing product-level systems in a collaborative environment."
+        ],
+        "bgClassName": "ujBG"
+    }
+]

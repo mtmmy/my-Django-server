@@ -1,0 +1,19 @@
+.navbar {
+    margin-bottom: 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.contactOption {
+    a {
+        display: flex !important;
+        justify-content: flex-start;
+        align-items: center;
+
+        p {
+            margin: 0 0 0 10px;
+        }
+    }
+}
