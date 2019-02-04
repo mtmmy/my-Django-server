@@ -17,18 +17,19 @@
     "babel-loader": "^8.0.5"
   },
   "dependencies": {
+    "css-loader": "^2.1.0",
+    "file-loader": "^1.1.11",
+    "image-webpack-loader": "^4.3.0",
+    "node-sass": "^4.9.0",
     "react": "^16.7.0",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.7.0",
     "react-waypoint": "^8.0.1",
-    "css-loader": "^2.1.0",
-    "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.0",
     "webpack-bundle-tracker": "^0.4.2-beta",
     "webpack-cli": "^3.2.1",
-    "file-loader": "^1.1.11",
-    "image-webpack-loader": "^4.3.0"
+    "webpack-loader": "0.0.1"
   }
 }
