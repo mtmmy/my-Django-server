@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="{% static "webmd/css/main.css" %}" rel="stylesheet" type="text/css" media="all">
+        <!-- <img src="{% static "my_app/example.jpg" %}" alt="My image"> -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="stream-graph"></div>
+            <div id="category-check"></div>
+            <div id="bubble-div"></div>
+        </div>
+        <div id="detail-modal">
+            <div id="modal-wraper">
+                <header>
+                    <button id="btn-close-modal" class="btn-close">Close</button>
+                    <h2 id="detail-header"></h2>
+                </header>
+                <div id="detail-container">
+                    <section></section>
+                </div>
+            </div>
+        </div>
+        <script src="{% static "webmd/js/main.js" %}"></script>
+    </body>
+</html>
