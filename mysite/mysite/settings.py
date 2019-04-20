@@ -25,7 +25,11 @@ SECRET_KEY = 's8v@5^h2+9j$j25hn2p(+arnn6fko*_l%kb8a=tlul!8xow5tk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '3.211.93.18',
+    'mtmmy.csie.io',
+    'hanminyang.csie.io',
+]
 
 
 # Application definition
