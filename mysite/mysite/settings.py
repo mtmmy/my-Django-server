@@ -29,6 +29,8 @@ ALLOWED_HOSTS = [
     '3.211.93.18',
     'mtmmy.csie.io',
     'hanminyang.csie.io',
+    '127.0.0.1',
+    'localhost'
 ]
 
 

@@ -131,32 +131,15 @@ $(function() {
     }
 
     function displayDetail(tag, start, end) {
-        d3.json("/static/webmd/json/new_1y.json", function(d) {
-            var fstCount = -1, sndCount = -1, trdCount = -1;
-            var fstObj, sndObj, trdObj;
-            d.forEach((val) => {
-                date = format.parse(val.date);
-                if (tag === val.category && start <= date && end >= date) {
-                    if (val.count > fstCount) {
-                        trdCount = sndCount;
-                        trdObj = sndObj;
-                        sndCount = fstCount;
-                        sndObj = fstObj;
-                        fstCount = val.count;
-                        fstObj = val;
-                    } else if (val.count > sndCount) {
-                        trdCount = sndCount;
-                        trdObj = sndObj;
-                        sndCount = val.count;
-                        sndObj = val;
-                    } else if (val.count > trdCount) {
-                        trdCount = val.count;
-                        trdObj = val;
-                    }
-                }
+        d3.json("/static/webmd/json/new.json", function(d) {
+            rawData = d.filter((val) => {
+                return val.category === tag;
+            })
+            rawData.sort((d1, d2) => {
+                return d2.count - d1.count;
             })
             
-            data = [fstObj, sndObj, trdObj];
+            var data = rawData.slice(0, 3);
             var detail = d3.select("#detail-modal");
             detail.style("display", "block");
             d3.select("#btn-close-modal").on("click", hideDetail);
@@ -305,7 +288,7 @@ $(function() {
         renderStream(dataTransform(weeklyStats));
     }
 
-    d3.json("/static/webmd/json/static_1y.json", function(data) {
+    d3.json("/static/webmd/json/static.json", function(data) {
         d3.json("/static/webmd/json/trans.json", function(tags) {
             tagDictionary = tags;
             hideDetail();
