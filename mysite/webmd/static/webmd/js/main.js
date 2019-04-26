@@ -8,7 +8,7 @@ $(function() {
         .sort((a, b) => { return b.count - a.count; })
         .size([diameter, diameter])
         .value((d) => {return d.count; })
-        .padding(1.5);
+        .padding(1.2);
 
     var svg = d3.select("#bubble-div")
         .append("svg")
@@ -16,6 +16,7 @@ $(function() {
         .attr("width", diameter)
         .attr("height", diameter);
 
+    // set height of Q&A sections
     function setHeight(){
         $(".response").each(function(index, element){
             var target = $(element);
@@ -57,6 +58,10 @@ $(function() {
     }
 
     function renderBubble(data, start, end) {        
+
+        // hierarchical graph
+        // calculate the total of the parameter
+        // generate each sub graph (bubble) with the propotion to the total
 
         data = {children: data};
         var node = svg.selectAll(".node")
@@ -104,7 +109,7 @@ $(function() {
          * With the result as `0.5em` the font will change to half its original size.
          */
         return (labelAvailableWidth / labelWidth) + 'em';
-      }
+    }
 
     function groupBy(data) {
         var groups = {};
@@ -131,9 +136,17 @@ $(function() {
     }
 
     function displayDetail(tag, start, end) {
+
+        // load QA file when a bubble is clicked
+        // pop up a Modal to show top 3 voted Q in three folded sections
+        // show the answer when the question is clicked (hide another answer if it shows)
+        console.log(start);
+        console.log(end);
         d3.json("/static/webmd/json/new.json", function(d) {
             rawData = d.filter((val) => {
-                return val.category === tag;
+                curDate = new Date(val.date)
+                return val.category === tag
+                    && curDate >= start && curDate <= end;
             })
             rawData.sort((d1, d2) => {
                 return d2.count - d1.count;
@@ -194,16 +207,25 @@ $(function() {
         var xAxis = d3.svg.axis().scale(x).orient("bottom").ticks(d3.time.months);        
         var yAxis = d3.svg.axis().scale(y);
         
+        // setup brush to be able to do the range selection
         var brush = d3.svg.brush().x(x).on("brush", brushed);
+
+        // use stack function to implement the stream graph
+        // use silhouette to let the stream starts from the middle of the y-axis
+        // this allows the curve be more moderate
         var stack = d3.layout.stack()
             .offset("silhouette")
             .values(function(d) { return d.values; })
             .x(function(d) { return d.date; })
             .y(function(d) { return d.count; });
 
+        // nest data with the variable you want
         var nest = d3.nest()
             .key(function(d) { return d.category; });
         
+        // use area function to create area for each category at certain time
+        // y0 denotes the starting position of y
+        // y denotes the height of the area
         var area = d3.svg.area()
             .interpolate("cardinal")
             .x(function(d) { return x(d.date); })
@@ -251,6 +273,7 @@ $(function() {
             .attr("y", -6)
             .attr("height", height + 7);
 
+        // brush implementation
         function brushed() {
             var startDate = brush.extent()[0],
                 endDate = brush.extent()[1];
