@@ -1,13 +1,26 @@
 [
     {
+        "companyName": "Samsung Research America",
+        "dateStart": "May 2019",
+        "dateEnd": "Aug 2019",
+        "location": "Montain View, CA",
+        "title": "Software Engineer Intern",
+        "details": [
+            "Designed dynamic Electronic Program Guide on Smart TV to improve the user experience by using React",
+            "Managed states in ReactJs by using Redux to simplify programming logic"
+        ],
+        "bgClassName": "acsBG"
+    },
+    {
         "companyName": "Alliance Computer Systems Ltd. Taiwan Branch",
         "dateStart": "Aug 2017",
         "dateEnd": "Oct 2017",
         "location": "Taipei, Taiwan",
         "title": "Frontend Web Engineer",
         "details": [
-            "Designed and developed reusable components which can be utilized on different web-based slot games",
-            "Managed states in ReactJs by using Redux to simplify programming logic"
+            "Designed and created reusable components to be utilized on different web-based slot games",
+            "Improved maintainability of gambling control system in React using Redux",
+            "Built Responsive web pages with React, SCSS, and HTML5"
         ],
         "bgClassName": "acsBG"
     },
@@ -16,9 +29,14 @@
         "dateStart": "Mar 2015",
         "dateEnd": "Feb 2017",
         "location": "Taipei, Taiwan",
-        "title": "Full Stack Developer",
+        "title": "Full Stack Engineer",
         "details": [
-            "At frontend, I developed the user operating platform, which included functions such as the login system, horse race ticket trading system, and user center; I also designed the back office system, which supported game operators in controlling the details of horse racing games. All content at front-end was implemented using javascript, jQuery, html5, and CSS, and we used Spring Web MVC to implement the backend system. Besides the main business of horse race system, I also led a side project which is a client site of shopping platform for iOS implemented by Xamarin. This app included user registration system, shopping cart system and purchase authentication."
+            "Designed and constructed frontend system of horse racing game with Responsive Web Design",
+            "Developed back-end system based on Java and Spring framework for real-time horse racing ticket transaction system supports 5,000 concurrent users",
+            "Devised an automatic web scraper to gather and generate data to replace manual data entering and supported real-time odds updating",
+            "Reduced response time by 90% in calculating dynamic horse racing odds by creating MySQL Stored Procedures to reduce database transaction volume",
+            "Communicated with clients and solved real-time issues reported by clients during horse racing games",
+            "Led a team in building a phone app regarding shopping system for iOS through Xamarin"
         ],
         "bgClassName": "gbBG"        
     },
@@ -26,10 +44,11 @@
         "companyName": "PerfectPairs Entertainment Inc.",
         "dateStart": "Sep 2014",
         "dateEnd": "Nov 2014",
-        "location": "New Taipei, Taiwan",
+        "location": "Taipei, Taiwan",
         "title": "Software Engineer",
         "details": [
-            "We had to develop an integrated platform that included member systems and social functions; the third-party game developer was then allowed to put their product on the platform without concerning the clients. I participated in developing the user authentication function, which controlled the login process of valid members and supported designing the player matching system. This solved the issue of how to distribute players evenly."
+            "Constructed an online gaming platform using C# for third-party games",
+            "Developed a user authentication function"
         ],
         "bgClassName": "ppBG"
     },

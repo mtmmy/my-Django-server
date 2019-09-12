@@ -28,16 +28,16 @@
             {
                 "name": "Python",
                 "picClassName": "python",
-                "percentage": 75,
+                "percentage": 80,
                 "isActive": false,
                 "colorCode": "#FED155"
             },
             {
-                "name": "C#",
-                "picClassName": "csharp",
-                "percentage": 70,
+                "name": "ReactJs",
+                "picClassName": "reactjs",
+                "percentage": 80,
                 "isActive": false,
-                "colorCode": "#812D94"
+                "colorCode": "#80D8F7"
             },
             {
                 "name": "HTML5",
@@ -61,13 +61,6 @@
                 "colorCode": "#7EB050"
             },
             {
-                "name": "ReactJs",
-                "picClassName": "reactjs",
-                "percentage": 65,
-                "isActive": false,
-                "colorCode": "#80D8F7"
-            },
-            {
                 "name": "C++",
                 "picClassName": "cpp",
                 "percentage": 65,
@@ -77,9 +70,16 @@
             {
                 "name": "MySQL",
                 "picClassName": "mysql",
-                "percentage": 65,
+                "percentage": 60,
                 "isActive": false,
                 "colorCode": "#FEA244"
+            },
+            {
+                "name": "C#",
+                "picClassName": "csharp",
+                "percentage": 40,
+                "isActive": false,
+                "colorCode": "#812D94"
             },
             {
                 "name": "Xamarin",
@@ -129,20 +129,19 @@
         "className": "chartProd",
         "skills": 
         [
-
-            {
-                "name": "SVN",
-                "picClassName": "svn",
-                "percentage": 90,
-                "isActive": false,
-                "colorCode": "#859cc4"
-            },
             {
                 "name": "Git",
                 "picClassName": "git",
-                "percentage": 85,
+                "percentage": 90,
                 "isActive": false,
                 "colorCode": "#df5b40"
+            },
+            {
+                "name": "SVN",
+                "picClassName": "svn",
+                "percentage": 80,
+                "isActive": false,
+                "colorCode": "#859cc4"
             }
         ]
     }

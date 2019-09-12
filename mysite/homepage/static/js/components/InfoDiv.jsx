@@ -6,7 +6,7 @@ class InfoDiv extends React.Component {
     createDetails(details) {
         var list = [];
         details.forEach(function(val, i) {
-            list.push(<div key={i}>{val}</div>)
+            list.push(<li key={i}>{val}</li>)
         })
         return list;
     }
@@ -20,9 +20,9 @@ class InfoDiv extends React.Component {
                 <div className={className}>
                     <div className="companyName">{companyName}, {title}</div>
                     <div className="date">{dateStart} - {dateEnd}, {location}</div>
-                    <div className="detail">
+                    <ul className="detail">
                         {this.createDetails(details)}
-                    </div>
+                    </ul>
                 </div>
             )
         } else if (type == "educationExp") {

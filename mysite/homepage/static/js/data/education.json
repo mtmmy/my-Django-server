@@ -4,10 +4,10 @@
         "dateEnd": "Expected Dec 2019",
         "location": "Tempe, Arizona",
         "major": "Master of Computer Science",
-        "gpa": "3.92",
+        "gpa": "3.8",
         "icon": "asu",
         "details": [
-
+            "Relevant Coursework: Database Management System Implementation, Foundations of Algorithms, Statistical Machine Learning, Data Mining, Mobile Computing, Data Visualization, Distributed Database Systems, Semantic Web Mining, Software Verification/Testing, and Statistical Learning"
         ],
         "bgClassName": "asuBG"
     },
